@@ -24,3 +24,13 @@ Dorado is built as a modular "Operating System." You deploy the **Core** once, t
     ├── /skill-rfp        # 🟢 RFP Response & Compliance (Included)
     ├── /skill-contract   # 🟡 Legal Redlining (Coming Soon)
     └── /skill-research   # 🟡 Deep Web Research (Coming Soon)
+
+
+🚀 The "RFP Response" Skill (Included)
+Out of the box, Dorado comes pre-installed with the RFP Skill. It replaces the manual grind of proposal management.
+
+Ingest: Drag-and-drop PDFs, Excel sheets, and Sharepoint folders.
+
+Draft: "Worker Agents" (Llama 3.2) draft answers based only on your verified history.
+
+Verify: A "Critic Agent" (Qwen 2.5) audits every answer against the compliance matrix.
