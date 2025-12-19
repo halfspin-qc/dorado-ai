@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorado AI | Sovereign RFP Automation</title>
+    <meta name="description" content="Automate RFP responses with Agentic AI on your own infrastructure. Private, Secure, CPU-optimized.">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0f172a; /* Slate 900 */
+            --text-main: #f8fafc; /* Slate 50 */
+            --text-muted: #94a3b8; /* Slate 400 */
+            --accent: #38bdf8; /* Sky 400 */
+            --accent-hover: #0ea5e9;
+            --border: #1e293b;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Nav */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .logo { font-weight: 700; font-size: 1.2rem; letter-spacing: -0.5px; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; margin-left: 20px; font-size: 0.9rem; }
+        .nav-links a:hover { color: var(--accent); }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 100px 0 80px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        /* Buttons */
+        .btn-group { display: flex; gap: 15px; justify-content: center; }
+        .btn {
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .btn-primary { background-color: var(--accent); color: #0f172a; }
+        .btn-primary:hover { background-color: var(--accent-hover); }
+        .btn-secondary { background-color: rgba(255,255,255,0.1); color: white; border: 1px solid var(--border); }
+        .btn-secondary:hover { background-color: rgba(255,255,255,0.15); }
+
+        /* Grid Sections */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 80px 0;
+            border-top: 1px solid var(--border);
+        }
+        .card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .card h3 { margin-top: 0; color: var(--accent); }
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Code Snippet Look */
+        .code-block {
+            background: #000;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+            color: #38bdf8;
+            font-size: 0.9rem;
+            margin: 40px auto;
+            max-width: 700px;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.5rem; }
+            .btn-group { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">Dorado AI</div>
+            <div class="nav-links">
+                <a href="#how-it-works">How it Works</a>
+                <a href="#tech">Technology</a>
+                <a href="https://github.com">GitHub</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div style="margin-bottom: 20px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent);">
+                Open Source • On-Premises • Private
+            </div>
+            <h1>The First Sovereign AI<br>for Winning RFPs.</h1>
+            <p class="subtitle">
+                Automate your proposal responses with Agentic AI that runs 100% on <em>your</em> infrastructure. No Cloud. No GPUs required. Your data never leaves the building.
+            </p>
+            
+            <div class="btn-group">
+                <a href="https://forms.gle/d4YGnV8yGkSibNVb6" class="btn btn-primary" target="_blank">Request Early Access</a>
+                <a href="https://github.com" class="btn btn-secondary">View on GitHub</a>
+            </div>
+
+            <div class="code-block">
+                > docker-compose up -d<br>
+                <span style="color: #fff">Starting Dorado Core...</span><br>
+                <span style="color: #4ade80">✔ Vector DB (Qdrant) initialized on port 6333</span><br>
+                <span style="color: #4ade80">✔ Local LLM (Llama-3-Quantized) loaded [CPU Mode]</span><br>
+                <span style="color: #4ade80">✔ Air-Gap Boundary secure.</span><br>
+                > Dorado is listening on http://localhost:3000
+            </div>
+        </section>
+
+        <section class="features" id="how-it-works">
+            <div class="card">
+                <h3>1. Ingest Securely</h3>
+                <p>Connect Dorado to your local folders or SharePoint. It indexes your PDFs, Excels, and Word docs locally using MarkItDown. No data is uploaded to OpenAI.</p>
+            </div>
+            <div class="card">
+                <h3>2. Agentic Writing</h3>
+                <p>Specialized "Worker Agents" (Llama 3.2) draft answers based only on your verified history. It cites the specific document and page number for every claim.</p>
+            </div>
+            <div class="card">
+                <h3>3. Compliance Guard</h3>
+                <p>A "Critic Agent" (Qwen 2.5) reviews every drafted answer against your RFP's compliance matrix. It blocks hallucinations before you ever see them.</p>
+            </div>
+        </section>
+
+        <section id="tech" style="text-align: center; padding: 60px 0;">
+            <h2 style="font-size: 2rem;">Why CTOs Approve Dorado</h2>
+            <div class="features" style="border-top: none; padding-top: 40px;">
+                <div class="card">
+                    <h3>Air-Gap Ready</h3>
+                    <p>Designed to run in environments with zero internet access. Perfect for GovCloud and Defense.</p>
+                </div>
+                <div class="card">
+                    <h3>CPU Optimized</h3>
+                    <p>Runs on standard AVX-512 CPUs. No need to procure scarce NVIDIA H100 GPUs.</p>
+                </div>
+                <div class="card">
+                    <h3>Open Core</h3>
+                    <p>Inspect the code. Verify the security. No black-box SaaS magic.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Dorado AI Project. Open Source Software.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
