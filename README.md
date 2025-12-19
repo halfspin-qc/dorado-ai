@@ -26,7 +26,7 @@ Dorado is built as a modular "Operating System." You deploy the **Core** once, t
     └── /skill-research   # 🟡 Deep Web Research (Coming Soon)
 ```
 
-##🚀 The "RFP Response" Skill (Included)
+## 🚀 The "RFP Response" Skill (Included)
 Out of the box, Dorado comes pre-installed with the RFP Skill. It replaces the manual grind of proposal management.
 
 Ingest: Drag-and-drop PDFs, Excel sheets, and Sharepoint folders.
@@ -35,7 +35,7 @@ Draft: "Worker Agents" (Llama 3.2) draft answers based only on your verified his
 
 Verify: A "Critic Agent" (Qwen 2.5) audits every answer against the compliance matrix.
 
-⚡ Quick Start (Docker)
+## ⚡ Quick Start (Docker)
 Run Dorado on any standard Linux/Windows server with Docker. No GPU required.
 ```bash
 # 1. Clone the repo
@@ -50,14 +50,14 @@ python dorado.py install skill-rfp
 # 4. Access the UI
 # Go to http://localhost:3000
 ```
-##🛡️ Why Sovereign?
+## 🛡️ Why Sovereign?
 Air-Gap Ready: No internet required after model download.
 
 Zero-Data Leakage: Your trade secrets never touch OpenAI/Anthropic APIs.
 
 Audit Trail: Every AI answer is cited to a specific source document.
 
-##🤝 Commercial Support
+## 🤝 Commercial Support
 Need help deploying this on Azure GovCloud or AWS Outposts? Contact the Enterprise Team for implementation services.
 
 
